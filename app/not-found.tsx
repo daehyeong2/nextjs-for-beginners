@@ -1,12 +1,12 @@
 import Navigation from "../components/navigation";
 
-const Page = () => {
+const NotFound = () => {
   return (
     <div>
       <Navigation />
-      <h1>Hello</h1>
+      <h1>Not Found</h1>
     </div>
   );
 };
 
-export default Page;
+export default NotFound;

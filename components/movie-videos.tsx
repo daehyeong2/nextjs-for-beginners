@@ -1,8 +1,10 @@
 import { API_URL } from "../app/(landing)/page";
 
 async function getVideos(id: string) {
-  const response = await fetch(`${API_URL}/${id}/videos`);
-  return response.json();
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  throw new Error("something is broken..");
+  //   const response = await fetch(`${API_URL}/${id}/videos`);
+  //   return response.json();
 }
 
 interface IMovieVideosProps {

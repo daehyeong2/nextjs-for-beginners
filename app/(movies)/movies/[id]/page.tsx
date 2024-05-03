@@ -6,7 +6,7 @@ interface IMovie {
   params: { id: string };
 }
 
-const MovieDetail = async ({ params: { id } }: IMovie) => {
+const MovieDetail = ({ params: { id } }: IMovie) => {
   return (
     <div>
       <Suspense fallback={<h1>Loading movie info</h1>}>

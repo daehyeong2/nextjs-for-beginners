@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.poster {
+  border-radius: 20px;
+  max-width: 70%;
+  place-self: center;
+}
+
+.title {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+.list {
+  box-sizing: border-box;
+  padding: 20px 5px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  overflow-y: auto;
+  height: 50vh;
+}
+.list li {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.list li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+.list li img:hover {
+  opacity: 1;
+}
+.list li span {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.poster {
+  border-radius: 20px;
+  max-width: 70%;
+  place-self: center;
+}
+
+.title {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.credits {
+  padding: 20px 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.credits li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.credits h2 {
+  font-size: 20px;
+  font-weight: bold;
+}

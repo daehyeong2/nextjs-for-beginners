@@ -1,8 +1,8 @@
 import { getMovie } from "../../../../../components/movie-info";
 import { IParams } from "../page";
 import styles from "../../../../../styles/movie-similar.module.css";
-import { API_URL } from "../../../../(landing)/page";
 import Movie from "../../../../../components/movie";
+import { API_URL } from "../../../../constants";
 
 const getMovies = async (id: string) => {
   const movies = await fetch(`${API_URL}/${id}/similar`);
